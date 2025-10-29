@@ -1,0 +1,203 @@
+
+/*google fontit*/
+
+ .indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+} 
+
+.smooch-sans {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*   YLEISET TYYLIT   */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Smooch sans"; sans-serif;
+    font-size: 2.5ch;
+}
+
+h1 {
+    font-family: "Bungee", sans-serif;
+}
+
+h2 {
+    font-family: "Bungee", sans-serif;
+}
+
+h3 {
+    font-family: "Bungee", sans-serif;
+}
+ 
+/* header flexilla * tästä uupuu grid-area: header*/
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+/*logo*/
+.logo {
+    font-size: 24px;
+}
+ 
+/* navigointi */
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+ 
+.nav-list li {
+    margin-left: 10px;
+}
+ 
+.nav-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+ 
+.nav-list li a:hover {
+    color: lightblue;
+}
+
+.crumb
+{
+    background-color: #8b8b8b;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.crumb a
+{
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.crumb a:hover {
+    color: lightblue;
+    transition: 0.4s;
+}
+
+/*    CONTAINER    */
+
+.container
+{
+    display: grid;
+    grid-template-areas: "sidebar content content ad"; /*elementtien määrä ja järjestys*/
+    grid-template-columns: 1fr 3fr 3fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/*CONTAINERIN OSIEN MÄÄRITTELYT: SIDEBAR CONTENT AD*/
+
+.vas-sivupalk
+{
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color:#8b8b8b;
+    padding: 20px;
+    border-radius: 1.5px;
+}
+
+.vas-sivupalk a
+{
+    color: antiquewhite;
+    text-decoration: none;
+    font-family: "Indie Flower";
+}
+
+.vas-sivupalk a:hover{
+    color: lightblue;
+    transition: color 0.3s;
+}
+
+.vas-sivupalk ul li
+{
+
+    margin-block: 10px;
+    list-style: none;
+}
+
+.palkinkuva img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    position: relative;
+    
+}
+
+.content
+{
+    grid-area: content;
+    display: grid;
+    grid-template-rows: auto auto auto; /*sisällön mukaan rivien korkeus kasvaa*/
+    gap: 20px;
+}
+
+.kontentti-artikkeli, .kontentti-galleria, .kontetti-ekstra
+{
+    background-color: antiquewhite;
+    padding: 20px;
+    border-radius: 1.5px;
+}
+
+.ad 
+{
+    grid-area: ad;
+    background-color:rgb(209, 199, 187);
+    padding: 10px;
+    border-radius: 1.5px;
+    text-align: center;
+}
+
+.footer
+{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color:antiquewhite;
+    padding: 10px;
+}
+
+.footernav-list{
+    display: flex;
+    list-style: none;
+}
+
+.footernav-list li{
+    margin-left: 5px;
+}
+
+.footernav-list li a{
+    color:rgb(128, 98, 59);
+    text-decoration: none;
+}
+
+.footernav-list li a:hover {
+    color: lightblue;
+    transition: 0.4s;
+}
