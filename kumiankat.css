@@ -53,9 +53,9 @@ h1 {
     font-family: "Concert One", sans-serif;
 }
 
-h2 {
+/* h2 {
     font-family: "Bungee", sans-serif;
-}
+} */
 
 h3 {
     font-family: "Bungee", sans-serif;
@@ -149,7 +149,7 @@ h3 {
 {
     color: antiquewhite;
     text-decoration: none;
-    font-family: "Indie Flower";
+    /* font-family: "Indie Flower"; */
 }
 
 .vas-sivupalk a:hover{
@@ -185,6 +185,22 @@ h3 {
     background-color: #ffdf96;
     padding: 20px;
     border-radius: 7px;
+}
+
+.kortti {
+    padding: 15px;
+    background-color: #f7c248;
+}
+
+.galleria-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.galleria-grid img {
+    max-width: 100%;
+    height: auto;
 }
 
 .ad 
