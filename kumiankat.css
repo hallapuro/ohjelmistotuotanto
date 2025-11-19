@@ -54,7 +54,7 @@ h1 {
 }
 
 /* h2 {
-    font-family: "Bungee", sans-serif;
+    font-family: "Concert One", sans-serif;
 } */
 
 h3 {
@@ -185,6 +185,10 @@ h3 {
     background-color: #ffdf96;
     padding: 20px;
     border-radius: 7px;
+}
+
+.kontentti-galleria .osa-h2 {
+    margin-bottom: 20px;
 }
 
 .kortti {
